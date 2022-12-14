@@ -14,6 +14,11 @@
 		9E66FC052949ABB600CE89BD /* UnifiedLocalizationResourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66FC042949ABB600CE89BD /* UnifiedLocalizationResourcesTests.swift */; };
 		9E66FC0F2949ABB600CE89BD /* UnifiedLocalizationResourcesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66FC0E2949ABB600CE89BD /* UnifiedLocalizationResourcesUITests.swift */; };
 		9E66FC112949ABB600CE89BD /* UnifiedLocalizationResourcesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66FC102949ABB600CE89BD /* UnifiedLocalizationResourcesUITestsLaunchTests.swift */; };
+		9E66FC3A2949BD9B00CE89BD /* I18NResource in Resources */ = {isa = PBXBuildFile; fileRef = 9E66FC392949BD9B00CE89BD /* I18NResource */; };
+		9E66FC3D2949BDAB00CE89BD /* PackageA in Resources */ = {isa = PBXBuildFile; fileRef = 9E66FC3B2949BDAB00CE89BD /* PackageA */; };
+		9E66FC3E2949BDAB00CE89BD /* PackageB in Resources */ = {isa = PBXBuildFile; fileRef = 9E66FC3C2949BDAB00CE89BD /* PackageB */; };
+		9E66FC402949BDDB00CE89BD /* PackageA in Frameworks */ = {isa = PBXBuildFile; productRef = 9E66FC3F2949BDDB00CE89BD /* PackageA */; };
+		9E66FC422949BDDB00CE89BD /* PackageB in Frameworks */ = {isa = PBXBuildFile; productRef = 9E66FC412949BDDB00CE89BD /* PackageB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +49,11 @@
 		9E66FC0A2949ABB600CE89BD /* UnifiedLocalizationResourcesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnifiedLocalizationResourcesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E66FC0E2949ABB600CE89BD /* UnifiedLocalizationResourcesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedLocalizationResourcesUITests.swift; sourceTree = "<group>"; };
 		9E66FC102949ABB600CE89BD /* UnifiedLocalizationResourcesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedLocalizationResourcesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9E66FC202949AEBE00CE89BD /* I18NResource */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = I18NResource; sourceTree = "<group>"; };
-		9E66FC212949AF6B00CE89BD /* PackageA */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PackageA; sourceTree = "<group>"; };
-		9E66FC222949AF7600CE89BD /* PackageB */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PackageB; sourceTree = "<group>"; };
+		9E66FC282949B85400CE89BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E66FC392949BD9B00CE89BD /* I18NResource */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = I18NResource; sourceTree = "<group>"; };
+		9E66FC3B2949BDAB00CE89BD /* PackageA */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PackageA; sourceTree = "<group>"; };
+		9E66FC3C2949BDAB00CE89BD /* PackageB */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PackageB; sourceTree = "<group>"; };
+		9E66FC432949BE8300CE89BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E66FC422949BDDB00CE89BD /* PackageB in Frameworks */,
+				9E66FC402949BDDB00CE89BD /* PackageA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +86,15 @@
 		9E66FBE72949ABB400CE89BD = {
 			isa = PBXGroup;
 			children = (
-				9E66FC1F2949AEBE00CE89BD /* Packages */,
+				9E66FC432949BE8300CE89BD /* README.md */,
+				9E66FC392949BD9B00CE89BD /* I18NResource */,
+				9E66FC3B2949BDAB00CE89BD /* PackageA */,
+				9E66FC3C2949BDAB00CE89BD /* PackageB */,
 				9E66FBF22949ABB400CE89BD /* UnifiedLocalizationResources */,
 				9E66FC032949ABB600CE89BD /* UnifiedLocalizationResourcesTests */,
 				9E66FC0D2949ABB600CE89BD /* UnifiedLocalizationResourcesUITests */,
 				9E66FBF12949ABB400CE89BD /* Products */,
+				9E66FC232949B60700CE89BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +111,7 @@
 		9E66FBF22949ABB400CE89BD /* UnifiedLocalizationResources */ = {
 			isa = PBXGroup;
 			children = (
+				9E66FC282949B85400CE89BD /* Info.plist */,
 				9E66FBF32949ABB400CE89BD /* UnifiedLocalizationResourcesApp.swift */,
 				9E66FBF52949ABB400CE89BD /* ContentView.swift */,
 				9E66FBF72949ABB600CE89BD /* Assets.xcassets */,
@@ -131,14 +145,11 @@
 			path = UnifiedLocalizationResourcesUITests;
 			sourceTree = "<group>";
 		};
-		9E66FC1F2949AEBE00CE89BD /* Packages */ = {
+		9E66FC232949B60700CE89BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E66FC202949AEBE00CE89BD /* I18NResource */,
-				9E66FC212949AF6B00CE89BD /* PackageA */,
-				9E66FC222949AF7600CE89BD /* PackageB */,
 			);
-			name = Packages;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,10 @@
 			dependencies = (
 			);
 			name = UnifiedLocalizationResources;
+			packageProductDependencies = (
+				9E66FC3F2949BDDB00CE89BD /* PackageA */,
+				9E66FC412949BDDB00CE89BD /* PackageB */,
+			);
 			productName = UnifiedLocalizationResources;
 			productReference = 9E66FBF02949ABB400CE89BD /* UnifiedLocalizationResources.app */;
 			productType = "com.apple.product-type.application";
@@ -246,7 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E66FBFB2949ABB600CE89BD /* Preview Assets.xcassets in Resources */,
+				9E66FC3E2949BDAB00CE89BD /* PackageB in Resources */,
+				9E66FC3D2949BDAB00CE89BD /* PackageA in Resources */,
 				9E66FBF82949ABB600CE89BD /* Assets.xcassets in Resources */,
+				9E66FC3A2949BD9B00CE89BD /* I18NResource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +452,7 @@
 				DEVELOPMENT_TEAM = HLPYGCEK6G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnifiedLocalizationResources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +482,7 @@
 				DEVELOPMENT_TEAM = HLPYGCEK6G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UnifiedLocalizationResources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -597,6 +617,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E66FC3F2949BDDB00CE89BD /* PackageA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PackageA;
+		};
+		9E66FC412949BDDB00CE89BD /* PackageB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PackageB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E66FBE82949ABB400CE89BD /* Project object */;
 }

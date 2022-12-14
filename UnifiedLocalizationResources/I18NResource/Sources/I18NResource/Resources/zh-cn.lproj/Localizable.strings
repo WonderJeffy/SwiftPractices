@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  
+
+  Created by wangjianfeng on 2022/12/14.
+  
+*/
+
+"HELLO_WORLD" = "你好！";
+"ViewB" = "视图B!";
+"MAIN_APP" = "主程序";
+

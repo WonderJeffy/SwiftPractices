@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "I18NResource",
+    defaultLocalization: "en", // 启用本地化支持
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
